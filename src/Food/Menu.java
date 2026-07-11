@@ -1,10 +1,26 @@
 package Food;
 
 public class Menu {
+
     private FoodItem[] items = {
-            new FoodItem(1, "Pizza", 150),
-            new FoodItem(2, "Burger", 120),
-            new FoodItem(3, "Cola", 30)
+
+            new FoodItemBuilder()
+                    .id(1)
+                    .name("Pizza")
+                    .price(150)
+                    .build(),
+
+            new FoodItemBuilder()
+                    .id(2)
+                    .name("Burger")
+                    .price(120)
+                    .build(),
+
+            new FoodItemBuilder()
+                    .id(3)
+                    .name("Cola")
+                    .price(30)
+                    .build()
     };
 
     public void displayMenu() {
